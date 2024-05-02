@@ -1,0 +1,8 @@
+0x00001141 <+8>: mov EAX, 0x20: Questa istruzione sposta il valore esadecimale 0x20 (32 in decimale) nel registro EAX. Questo potrebbe essere un'impostazione iniziale di un valore costante in EAX.
+0x00001148 <+15>: mov EDX, 0x38: Questa istruzione sposta il valore esadecimale 0x38 (56 in decimale) nel registro EDX. Anche qui, potrebbe essere un'impostazione iniziale di un valore costante in EDX.
+0x00001155 <+28>: add EAX, EDX: Questa istruzione aggiunge il contenuto del registro EDX al registro EAX e memorizza il risultato in EAX. Quindi, EAX conterrà il risultato della somma di 32 e 56, che è 88 (0x58 in esadecimale).
+0x00001157 <+30>: mov EBP, EAX: Questa istruzione copia il valore contenuto nel registro EAX nel registro EBP. Quindi, il valore 88 (0x58) sarà ora presente anche in EBP.
+0x0000115a <+33>: cmp EBP, 0xa: Questa istruzione confronta il valore contenuto in EBP (che è 88) con il valore esadecimale 0xA (10 in decimale).
+0x0000115e <+37>: jge 0x1176 <main+61>: Questa è un'istruzione condizionale. Se il risultato del confronto precedente (che è "maggiore o uguale") è vero, il controllo del programma salterà all'indirizzo 0x1176. Altrimenti, continuerà con l'istruzione successiva.
+0x0000116a <+49>: mov EAX, 0x0: Questa istruzione assegna il valore esadecimale 0x0 (che è 0 in decimale) al registro EAX.
+0x0000116f <+54>: call 0x1030 <printf@plt>: Questa istruzione chiama una funzione. La funzione chiamata è printf, situata all'indirizzo 0x1030 (indicato come <printf@plt>). Presumibilmente, verrà utilizzata per stampare qualcosa a schermo.
